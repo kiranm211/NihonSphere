@@ -34,7 +34,7 @@ export const kanji: KanjiItem[] = [
     strokeOrderHint: "4 strokes (placeholder for animation)",
     examples: [
       { jp: "日本", en: "Japan" },
-      { jp: "毎日べんきょうします。", en: "I study every day." },
+      { jp: "毎日勉強します。", en: "I study every day." },
     ],
     srsIntervalDays: 1,
   },

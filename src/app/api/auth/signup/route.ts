@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "user already exists" }, { status: 409 });
   }
 
-  const passwordHash = await bcrypt.hash(password, 10);
+  const passwordHash = await bcrypt.hash(password, 12);
   users.set(email, { passwordHash, level });
 
   const token = createJwt({ email, level });
